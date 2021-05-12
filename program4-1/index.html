@@ -19,20 +19,23 @@
 	        <label>Enter Number One: <input type="text" id="number1"></label>
             <label>Enter Number Two: <input type="text" id="number2"></label>
             <button type="button" onclick="AddTwoNumbers()">Add</button>
+            <div id="output"></div>
         </main>
 
         <footer>
             &copy;2021 &bull; Tanner Beeson &bull; BYU_Idaho &bull; CIT 160
-        </footer>
-
-        <div id="output"></div>
+        </footer>        
 
         <script>
             function AddTwoNumbers() {
+                // Here we extract the int values from the input fields by using parseInt()
                 var numOne = parseInt(document.getElementById("number1").value);
                 var numTwo = parseInt(document.getElementById("number2").value);
+
+                //Then we add the numbers together
                 var sum = numOne + numTwo;
 
+                // Display the sum in the "output" div
                 document.getElementById("output").innerHTML = "Sum: " + sum;
             }
         </script>
