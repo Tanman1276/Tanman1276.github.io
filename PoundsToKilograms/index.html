@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Week 5: Pounds To Kilograms</h1>
+            <h2>Tanner Beeson</h2>
+        </header>
+
+        <main>
+            <h3>Pounds To Kilograms</h3>
+	        <label>Enter Pounds: <input type="text" id="number1"></label>
+            <button type="button" onclick="Convert()">Convert</button>
+        </main>
+
+        <footer>
+            &copy;2021 &bull; Tanner Beeson &bull; BYU_Idaho &bull; CIT 160
+        </footer>        
+
+        <div id="output"></div>
+        
+        <script>
+            function Convert() {
+                // Here we extract the int value from the input field by using parseFloat()
+                var numOne = parseFloat(document.getElementById("number1").value);
+            
+                //Then we convert to kilograms
+                var convertedOutput = numOne * 0.453592;
+
+                // Display the rounded value in the "output" div
+                document.getElementById("output").innerHTML = convertedOutput.toFixed(1) + " Kilograms";
+            }
+        </script>
+    </body>
+
+</html>
