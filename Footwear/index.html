@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="myJavaScript.js"></script>
+        <title>Weather Shoes</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Week 6: Weather Shoes</h1>
+            <h2>Tanner Beeson</h2>
+        </header>
+
+        <main>
+            <h3>Weather Shoes</h3>
+            <div>
+                <select name="weather" id="weatherSelect">
+                    <option value="">--Please choose an option--</option>
+                    <option value="sandals">Hot</option>
+                    <option value="galoshes">Rain</option>
+                    <option value="boots">Snow</option>
+                    <option value="shoes">Unknown</option>
+                </select>
+            </div>
+            <div>
+                <button type="button" onclick="Calculate()">What Shoes Should I Wear?</button>
+            </div>
+            <hr>
+            <div id="output"></div>
+        </main>
+
+        <footer>
+            &copy;2021 &bull; Tanner Beeson &bull; BYU_Idaho &bull; CIT 160
+        </footer>        
+    </body>
+</html>
