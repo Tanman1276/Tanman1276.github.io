@@ -47,11 +47,11 @@
                     var interest = balance * rate;
                     balance += interest;
                 }
-                document.getElementById('display4').textContent = balance;
+                document.getElementById('display4').textContent = balance.toFixed(2);
             }
 
             function loopFive() {
-                // The following syntax is incorrect because there is a ";" after the while loop and before the "{}"
+                // The following syntax is incorrect because there is a ";" after the "while" and before the "{}"
                 let i = 0;
                 while (i < 3); {
                     // valid statements (this is not the problem)
