@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="myJavaScript.js"></script>
+        <title>Loan</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Week 11: Loan</h1>
+            <h2>Tanner Beeson</h2>
+        </header>
+
+        <main>
+            <h3>Loan</h3>
+            
+            <div>
+                Amount invested (principle) <input type="text" id="principle">
+            </div>
+
+            <div>
+                Annual rate (example: .08) <input type="text" id="annualRate">
+            </div>
+
+            <div>
+                Number of years <input type="text" id="numYears">
+            </div>
+
+            <div>
+                Periods per year <input type="text" id="periods">
+            </div>
+
+            <div>
+                Payment Paid To Date <input type="text" id="numPaymentPaidToDate">
+            </div>
+
+            <div>
+                <button type="button" onclick="doPayment()">Compute Payment</button> <input type="text" id="paymentValue">
+            </div>
+
+            <div>
+                <button type="button" onclick="doBalance()">Compute Balance</button> <input type="text" id="balanceValue">
+            </div>
+        </main>
+
+        <footer>
+            &copy; 2021 &bull; Tanner Beeson &bull; BYU_Idaho &bull; CIT 160
+        </footer>        
+    </body>
+</html>
